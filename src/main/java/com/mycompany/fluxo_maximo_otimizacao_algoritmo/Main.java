@@ -1,6 +1,8 @@
 package com.mycompany.fluxo_maximo_otimizacao_algoritmo;
 
-import javax.inject.Inject;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 
 /**
  *
@@ -12,6 +14,12 @@ public class Main {
 
     
     public static void main(String[] args) throws Exception {
+        
+                Date dataAtual = new Date();
+                
+SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+
+                String date = simpleDateFormat.format(dataAtual);
         
         Arquivo arquivo = new Arquivo();
         
