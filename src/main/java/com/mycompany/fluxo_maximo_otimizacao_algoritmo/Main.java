@@ -2,6 +2,7 @@ package com.mycompany.fluxo_maximo_otimizacao_algoritmo;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.List;
 
 
 /**
@@ -15,17 +16,12 @@ public class Main {
     
     public static void main(String[] args) throws Exception {
         
-                Date dataAtual = new Date();
-                
-SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
-
-                String date = simpleDateFormat.format(dataAtual);
-        
         Arquivo arquivo = new Arquivo();
+        CaminhoMaximo caminhoMaximo = new CaminhoMaximo();
         
-        arquivo.lerArquivo();
+        List<Nodo> listaNodo = arquivo.lerArquivo();
         
-//        percorrerCaminho();
+        caminhoMaximo.realizarMetodo(listaNodo);
     }
-    
+
 }

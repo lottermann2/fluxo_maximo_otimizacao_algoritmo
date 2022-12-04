@@ -52,7 +52,7 @@ public class Arquivo {
                     criarNodo(nodoDestino, nodoOrigem, 0);
 
                 }catch (Exception ex){
-                    System.out.println("ERRO! Linha: " + line);
+//                    System.out.println("ERRO! Linha: " + line);
                 }
             }
         } catch (Exception ex) {
